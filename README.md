@@ -30,5 +30,6 @@ This project demonstrates a simple webpage with a Video.js player that plays two
 - Add or replace video files in the same directory as the HTML file.
 - Customize the appearance by modifying the styles in the `<style>` section of the HTML file.
 
-##Demo
+## Demo
+
 file:///C:/Users/nidhh/OneDrive/Documents/Quantumhunts/Task_3/Video.html
