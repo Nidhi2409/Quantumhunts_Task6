@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merged Video Player</title>
+    <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .video-container {
+            max-width: 800px;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-container">
+        <h1>Merged Video Player</h1>
+        <video id="my-video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="264">
+            <source src="nature.mp4" type="video/mp4" />
+            <source src="bird.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
+    <script>
+        var player = videojs("my-video");
+        var videos = ["nature.mp4", "bird.mp4"];
+        var currentVideoIndex = 0;
+
+        player.on("ended", function () {
+            currentVideoIndex++;
+            if (currentVideoIndex >= videos.length) {
+                currentVideoIndex = 0; // Loop back to the first video
+            }
+            player.src({ src: videos[currentVideoIndex], type: "video/mp4" });
+            player.play();
+        });
+    </script>
+</body>
+</html>
