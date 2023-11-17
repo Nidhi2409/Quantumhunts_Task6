@@ -1,6 +1,6 @@
 # Quantumhunts_Task6
 
-# Merged Video Player with Video.js
+# Merged Video Player
 
 This project demonstrates a simple webpage with a Video.js player that plays two videos consecutively and loops back to the first one when finished. The layout is centered and includes an aesthetically pleasing heading.
 
