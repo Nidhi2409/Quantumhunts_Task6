@@ -2,7 +2,7 @@
 
 # Merged Video Player
 
-This project demonstrates a simple webpage with a Video.js player that plays two videos consecutively and loops back to the first one when finished. The layout is centered and includes an aesthetically pleasing heading.
+This project demonstrates a simple webpage with a Video.html player that plays two videos consecutively and loops back to the first one when finished. The layout is centered and includes an aesthetically pleasing heading.
 
 ## Getting Started
 
@@ -16,12 +16,12 @@ This project demonstrates a simple webpage with a Video.js player that plays two
    cd merged-video-player
    ```
 
-3. **Open `index.html` in a Web Browser:**
-   Double-click on the `index.html` file to open it in your default web browser.
+3. **Open `video.html` in a Web Browser:**
+   Double-click on the `video.html` file to open it in your default web browser.
 
 ## Usage
 
-- The webpage displays a Video.js player with two video files (`video1.mp4` and `video2.mp4`) playing consecutively.
+- The webpage displays a Video.html player with two video files (`video1.mp4` and `video2.mp4`) playing consecutively.
 - When the first video ends, the player automatically switches to the second video.
 - If the second video ends, it loops back to the first video, creating a continuous loop.
 
